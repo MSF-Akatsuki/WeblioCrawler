@@ -29,7 +29,6 @@ def dumpPageContents(url):
                     ans=ans+it.string
                 w.write(ans+'\n')
         time.sleep(1)
-        raise NameError
     except Exception as e:
         with open('ErrorInfo','a') as f:
             f.write('Error occurs when dumping from '+url+' : '+str(e)+'\n')
