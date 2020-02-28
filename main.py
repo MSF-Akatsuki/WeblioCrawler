@@ -1,4 +1,4 @@
-import pymysql
+#import pymysql
 import requests
 from sqlConfig import USER_NAME,PASSWORD
 from dumpTargets import dumpAllTargets

@@ -43,6 +43,10 @@ def dumpTargets(url):
             f.write('Error occurs when dumping from '+url+' : '+str(e)+'\n')
         time.sleep(600)
         return []
+    except Exception as e:
+        with open('ErrorInfo','a') as f:
+            f.write('Error occurs when dumping from '+url+' : '+str(e)+'\n')
+        time.sleep(600)        
 
 def dumpAllTargets():
     ans=[]
